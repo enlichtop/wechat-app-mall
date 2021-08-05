@@ -94,7 +94,7 @@ module.exports =
 
 /* eslint-disable */
 // 小程序开发api接口工具包，https://github.com/gooking/wxapi
-var API_BASE_URL = 'https://api.it120.cc';
+var API_BASE_URL = 'http://localhost:8000';
 // var API_BASE_URL = 'http://127.0.0.1:8081';
 var subDomain = '-';
 var merchantId = '0';
@@ -186,7 +186,7 @@ module.exports = {
     return request('/config/value', true, 'get', { key: key });
   },
   queryConfigBatch: function queryConfigBatch(keys) {
-    return request('/config/values', true, 'get', { keys: keys });
+    return request('/getConfig', true, 'get', { keys: keys });
   },
   scoreRules: function scoreRules(data) {
     return request('/score/send/rule', true, 'post', data);

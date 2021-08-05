@@ -133,10 +133,10 @@ Page({
   },
   readConfigVal() {
     wx.setNavigationBarTitle({
-      title: wx.getStorageSync('mallName')
+      title: wx.getStorageSync('appName')
     })
     this.setData({
-      mallName:wx.getStorageSync('mallName')?wx.getStorageSync('mallName'):'',
+      appName:wx.getStorageSync('appName')?wx.getStorageSync('appName'):'',
       show_buy_dynamic: wx.getStorageSync('show_buy_dynamic')
     })
   },
@@ -279,7 +279,7 @@ Page({
   },
   onShareAppMessage: function() {    
     return {
-      title: '"' + wx.getStorageSync('mallName') + '" ' + wx.getStorageSync('share_profile'),
+      title: '"' + wx.getStorageSync('appName') + '" ' + wx.getStorageSync('share_profile'),
       path: '/pages/index/index?inviter_id=' + wx.getStorageSync('uid')
     }
   },

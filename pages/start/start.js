@@ -11,13 +11,13 @@ Page({
   onLoad:function(){
     const _this = this
     wx.setNavigationBarTitle({
-      title: wx.getStorageSync('mallName')
+      title: wx.getStorageSync('appName')
     })
     let shopMod = wx.getStorageSync('shopMod')
     if (!shopMod) {
       shopMod = 0
     }
-    const app_show_pic_version = wx.getStorageSync('app_show_pic_version')
+    const app_show_pic_version = "12.2.0"//wx.getStorageSync('app_show_pic_version')
     if (app_show_pic_version && app_show_pic_version == CONFIG.version) {
       if (shopMod==1) {
         wx.redirectTo({

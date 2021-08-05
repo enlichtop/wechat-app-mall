@@ -3,7 +3,7 @@
   <view class="search" style="height:{{navHeight}}px;padding-top:{{navTop}}px">
     <view class="search-title" src="../../images/actLogo/ytlogo.png"
       style="height:{{navHeight-navTop-5}}px;line-height:{{navHeight-navTop-5}}px;width:{{132/52*(navHeight-navTop-5)}}px;">
-      {{mallName}}
+      {{appName}}
     </view>
     <input placeholder-class="search-placeholder"
       style="width:{{menuButtonObject.left-18-((132/52)*(navHeight-navTop-5))}}px" type="text" placeholder="输入关键词搜索" disabled
@@ -143,7 +143,7 @@ module.exports = {
   <view class="space"></view>
   <van-divider custom-class="table-text" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}"
     contentPosition="center">
-    <image class="table-icon-tuijian" src="../../images/home/recommend.png"></image> 爆品推荐
+    <image class="table-icon-tuijian" src="../../images/home/recommend.png"></image> 商品推荐
   </van-divider>
   <view class="goods-container" wx:if="{{goodsRecommend.length > 0 && activeCategoryId == 0}}">
     <view class="goods-box" wx:for="{{goodsRecommend}}" wx:key="id" bindtap="toDetailsTap" data-id="{{item.id}}" data-supplytype="{{item.supplyType}}" data-yyid="{{item.yyId}}">

@@ -304,7 +304,7 @@ Page({
   },
   onShareAppMessage() {    
     return {
-      title: '"' + wx.getStorageSync('mallName') + '" ' + wx.getStorageSync('share_profile'),
+      title: '"' + wx.getStorageSync('appName') + '" ' + wx.getStorageSync('share_profile'),
       path: '/pages/index/index?inviter_id=' + wx.getStorageSync('uid'),
       imageUrl: wx.getStorageSync('share_pic'),
       success: function (res) {
