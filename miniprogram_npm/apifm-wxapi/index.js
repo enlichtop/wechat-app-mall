@@ -94,7 +94,8 @@ module.exports =
 
 /* eslint-disable */
 // 小程序开发api接口工具包，https://github.com/gooking/wxapi
-var API_BASE_URL = 'http://localhost:8000';
+//var API_BASE_URL = 'http://localhost:8000';
+var API_BASE_URL = 'https://enlich.top';
 // var API_BASE_URL = 'http://127.0.0.1:8081';
 var subDomain = '-';
 var merchantId = '0';
